@@ -166,22 +166,8 @@ button{font-family:inherit}
 .btn-ghost:hover{transform:translateY(-3px);border-color:rgba(108,76,241,.4);color:var(--v1)}
 .btn-ghost:hover svg{transform:translateX(3px)}
 
-/* ============ 滚动跑马灯 ============ */
-.ticker{
-  margin:clamp(26px,5vh,52px) 0 clamp(20px,4vh,34px);
-  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
-  background:rgba(255,255,255,.55);
-  overflow:hidden;display:flex;user-select:none;
-  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
-  mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
-}
-.ticker-track{display:flex;flex:none;align-items:center;gap:clamp(20px,3vw,38px);padding:14px 0;animation:slide 34s linear infinite;will-change:transform}
-.ticker:hover .ticker-track{animation-play-state:paused}
-.ticker-item{display:inline-flex;align-items:center;gap:clamp(20px,3vw,38px);font-size:clamp(13px,1.5vw,15px);font-weight:800;letter-spacing:2px;color:var(--ink-soft);white-space:nowrap}
-.ticker-item i{font-style:normal;color:var(--v2);font-size:11px}
-@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-
 /* ============ 入口卡片 ============ */
+#entries{margin-top:clamp(10px,3vh,36px)}
 .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:clamp(18px,3vh,28px)}
 .section-title{margin:0;font-size:clamp(24px,3.4vw,38px);font-weight:900;letter-spacing:-.02em}
 .section-sub{margin:6px 0 0;font-size:14px;font-weight:600;color:var(--muted)}
@@ -512,14 +498,6 @@ button{font-family:inherit}
       </div>
     </div>
   </section>
-
-  <!-- ================= 滚动跑马灯 ================= -->
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker-track" id="tickerTrack">
-      <div class="ticker-item">英语 <i>✦</i> 数学 <i>✦</i> 政治 <i>✦</i> 管理类联考 <i>✦</i> 专业课 <i>✦</i> 笔试 <i>✦</i> 冲刺 <i>✦</i> 押题 <i>✦</i> 复试 <i>✦</i></div>
-      <div class="ticker-item">英语 <i>✦</i> 数学 <i>✦</i> 政治 <i>✦</i> 管理类联考 <i>✦</i> 专业课 <i>✦</i> 笔试 <i>✦</i> 冲刺 <i>✦</i> 押题 <i>✦</i> 复试 <i>✦</i></div>
-    </div>
-  </div>
 
   <!-- ================= 资源入口 ================= -->
   <section class="wrap" id="entries">
