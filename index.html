@@ -112,14 +112,8 @@ button{font-family:inherit}
 
 /* ============ 主视觉 ============ */
 .wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 clamp(18px,4vw,40px)}
-.hero{position:relative;overflow:hidden;padding:calc(var(--nav-h) + clamp(46px,9vh,96px)) 0 clamp(30px,5vh,54px)}
-.hero-mark{
-  position:absolute;top:clamp(6px,3vw,36px);right:0;z-index:0;
-  font-size:clamp(190px,34vw,440px);font-weight:900;line-height:.78;
-  color:transparent;-webkit-text-stroke:2px rgba(108,76,241,.14);
-  pointer-events:none;user-select:none;
-}
-.hero-inner{position:relative;z-index:1;display:flex;flex-direction:column;align-items:flex-start;gap:clamp(16px,2.4vw,24px);max-width:900px}
+.hero{position:relative;overflow:hidden;padding:calc(var(--nav-h) + clamp(18px,3.6vh,42px)) 0 clamp(14px,2.4vh,26px)}
+.hero-inner{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;text-align:center;gap:clamp(10px,1.5vw,16px);max-width:920px;margin:0 auto}
 .eyebrow{
   display:inline-flex;align-items:center;gap:10px;
   font-size:13px;font-weight:800;letter-spacing:1.6px;color:var(--ink-soft);
@@ -138,7 +132,7 @@ button{font-family:inherit}
 }
 @keyframes shift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
 .hero-domain{
-  margin-top:calc(clamp(16px,2.4vw,24px) * -.34);
+  margin-top:calc(clamp(10px,1.5vw,16px) * -.45);
   margin-bottom:-.26em;
   padding-bottom:.26em;
   font-family:"Arial Black","Archivo Black","Segoe UI",system-ui,sans-serif;
@@ -150,8 +144,8 @@ button{font-family:inherit}
   filter:drop-shadow(0 10px 22px rgba(108,76,241,.24));
 }
 .hero .lead{margin:0;max-width:640px;font-size:clamp(15px,1.7vw,19px);color:var(--ink-soft);font-weight:500}
-.hero .lead b{font-weight:900;color:var(--ink)}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+.hero .lead b{font-weight:900;color:var(--ink);white-space:nowrap}
+.cta-row{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:6px}
 .btn{
   display:inline-flex;align-items:center;gap:10px;
   padding:15px 26px;border-radius:999px;font-size:15px;font-weight:800;
@@ -167,18 +161,15 @@ button{font-family:inherit}
 .btn-ghost:hover svg{transform:translateX(3px)}
 
 /* ============ 入口卡片 ============ */
-#entries{margin-top:clamp(10px,3vh,36px)}
-.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:clamp(18px,3vh,28px)}
-.section-title{margin:0;font-size:clamp(24px,3.4vw,38px);font-weight:900;letter-spacing:-.02em}
-.section-sub{margin:6px 0 0;font-size:14px;font-weight:600;color:var(--muted)}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,1.8vw,22px)}
+#entries{margin-top:clamp(10px,2.6vh,28px)}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,1.5vw,18px)}
 .card-top{display:flex;align-items:flex-start;gap:16px}
 .card-top > .card-text{display:flex;flex-direction:column;gap:7px;min-width:0}
 .card-foot{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-top:4px}
 .card-foot .card-go{margin-top:0}
 .card{
-  position:relative;display:flex;flex-direction:column;gap:14px;
-  padding:clamp(22px,2.4vw,34px);
+  position:relative;display:flex;flex-direction:column;gap:12px;
+  padding:clamp(18px,2vw,28px);
   background:var(--card);border:1px solid var(--line);border-radius:var(--r);
   box-shadow:var(--shadow-s);overflow:hidden;isolation:isolate;
   transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s,border-color .35s;
@@ -230,8 +221,8 @@ button{font-family:inherit}
 
 /* ============ 页尾 ============ */
 .footer{
-  position:relative;margin-top:clamp(64px,11vh,130px);
-  padding:clamp(34px,5.5vw,62px) clamp(18px,4vw,48px) 30px;
+  position:relative;margin-top:clamp(30px,6vh,64px);
+  padding:clamp(24px,3.6vw,40px) clamp(18px,4vw,48px) 24px;
   color:#fff;overflow:hidden;
   border-radius:clamp(26px,4vw,52px) clamp(26px,4vw,52px) 0 0;
   background:linear-gradient(165deg,#6a54cf 0%,#4c39b0 46%,#2f2380 100%);
@@ -243,9 +234,9 @@ button{font-family:inherit}
 .wechat-card{
   position:relative;z-index:1;
   display:grid;grid-template-columns:auto 1fr;align-items:center;
-  gap:clamp(26px,4vw,58px);
+  gap:clamp(20px,2.6vw,36px);
   max-width:1010px;margin:0 auto;
-  padding:clamp(24px,3.2vw,42px);
+  padding:clamp(18px,2.6vw,32px);
   border-radius:34px;
   background:linear-gradient(150deg,rgba(255,255,255,.16),rgba(255,255,255,.06));
   border:1px solid rgba(255,255,255,.2);
@@ -254,7 +245,7 @@ button{font-family:inherit}
 }
 .qr-wrap{
   position:relative;flex:none;justify-self:center;
-  width:clamp(226px,27vw,306px);padding:14px;border-radius:26px;
+  width:clamp(198px,23.5vw,268px);padding:12px;border-radius:24px;
   background:#fff;box-shadow:0 26px 60px -24px rgba(0,0,0,.75);
 }
 .qr-wrap::before{
@@ -268,39 +259,39 @@ button{font-family:inherit}
   font-size:12.5px;font-weight:800;white-space:nowrap;
   box-shadow:0 12px 26px -10px rgba(7,193,96,.85);
 }
-.sns-info{display:flex;flex-direction:column;gap:18px;min-width:0}
-.sns-name{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.sns-info{display:flex;flex-direction:column;gap:11px;min-width:0}
+.sns-name{display:flex;align-items:center;gap:11px;flex-wrap:wrap}
 .sns-name .lbl{
   font-size:12.5px;font-weight:800;letter-spacing:1.6px;color:rgba(255,255,255,.88);
   background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.24);
   padding:5px 12px;border-radius:999px;white-space:nowrap;
 }
 .sns-name .val{
-  font-size:clamp(32px,4.4vw,54px);font-weight:900;letter-spacing:2px;line-height:1.1;
+  font-size:clamp(26px,3.4vw,42px);font-weight:900;letter-spacing:1.5px;line-height:1.05;
   background:linear-gradient(100deg,#ffffff 0%,#ffd9ec 42%,#ffe4b5 100%);
   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
   filter:drop-shadow(0 8px 22px rgba(28,12,70,.55));
 }
-.sns-search{display:flex;flex-direction:column;gap:12px}
-.sns-row{display:flex;align-items:center;gap:11px;font-size:clamp(17px,2vw,22px);font-weight:900;color:#f4f2fb}
-.sns-row svg{width:30px;height:30px;flex:none}
+.sns-search{display:flex;flex-direction:column;gap:9px}
+.sns-row{display:flex;align-items:center;gap:10px;font-size:clamp(15px,1.7vw,19px);font-weight:900;color:#f4f2fb}
+.sns-row svg{width:26px;height:26px;flex:none}
 .search-box{
   display:flex;align-items:center;gap:12px;
-  background:#fff;border-radius:16px;padding:14px 20px;
+  background:#fff;border-radius:15px;padding:11px 17px;
   box-shadow:0 18px 40px -22px rgba(0,0,0,.7);
 }
 .search-box svg{width:22px;height:22px;flex:none;stroke:#8b8798;stroke-width:2.4;fill:none;stroke-linecap:round}
-.search-box span{font-size:clamp(17px,2vw,23px);font-weight:800;color:#2a2738;letter-spacing:1px}
+.search-box span{font-size:clamp(15px,1.7vw,19px);font-weight:800;color:#2a2738;letter-spacing:1px}
 .qq-row{
   display:flex;align-items:center;gap:12px;flex-wrap:wrap;
   width:100%;text-align:left;cursor:pointer;
-  padding:16px 20px;border-radius:18px;
+  padding:12px 17px;border-radius:16px;
   background:rgba(255,255,255,.13);border:1px dashed rgba(255,255,255,.36);
   color:#fff;font-size:14.5px;font-weight:600;
   transition:background .3s,border-color .3s,transform .3s;
 }
 .qq-row:hover{background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.6);transform:translateY(-2px)}
-.qq-row .v{font-weight:900;font-size:clamp(21px,2.7vw,34px);letter-spacing:.5px;white-space:nowrap}
+.qq-row .v{font-weight:900;font-size:clamp(18px,2.2vw,27px);letter-spacing:.5px;white-space:nowrap}
 .qq-row .v em{
   font-style:normal;font-weight:900;letter-spacing:1.5px;
   font-family:"Arial Black","Arial Bold",Impact,system-ui,sans-serif;
@@ -318,8 +309,8 @@ button{font-family:inherit}
 .qq-row:hover .hint{transform:translateY(-2px);box-shadow:0 0 0 2px #fff,0 20px 34px -12px rgba(20,8,60,.85);filter:brightness(1.06)}
 .qq-row .hint svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 .foot-bottom{
-  position:relative;z-index:1;margin-top:clamp(30px,5vw,54px);
-  padding-top:22px;border-top:1px solid rgba(255,255,255,.2);
+  position:relative;z-index:1;margin-top:clamp(20px,3.2vw,34px);
+  padding-top:16px;border-top:1px solid rgba(255,255,255,.2);
   display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;
   font-size:13px;color:rgba(255,255,255,.82);font-weight:600;
 }
@@ -327,7 +318,7 @@ button{font-family:inherit}
 .foot-bottom a:hover{color:#fff}
 .foot-links{display:flex;gap:18px;flex-wrap:wrap}
 .foot-domain{
-  position:relative;z-index:1;margin-top:clamp(26px,4.4vw,46px);
+  position:relative;z-index:1;margin-top:clamp(16px,2.6vw,28px);
   display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;
 }
 .foot-domain .fd-lbl{
@@ -337,7 +328,7 @@ button{font-family:inherit}
 }
 .foot-domain .fd-val{
   font-family:"Arial Black","Arial Bold",Impact,system-ui,sans-serif;
-  font-size:clamp(24px,3.6vw,46px);font-weight:900;line-height:1;letter-spacing:-.01em;
+  font-size:clamp(20px,2.9vw,36px);font-weight:900;line-height:1;letter-spacing:-.01em;
   margin-bottom:-.26em;padding-bottom:.26em;
   background:linear-gradient(100deg,#ffffff 0%,#ffd9ec 45%,#ffe4b5 100%);
   background-origin:border-box;
@@ -385,11 +376,10 @@ button{font-family:inherit}
   .burger{display:grid}
 }
 @media (max-width:900px){
-  .wechat-card{grid-template-columns:1fr;justify-items:center}
+  .wechat-card{grid-template-columns:1fr;justify-items:center;gap:clamp(26px,4.2vw,38px)}
   .sns-info{width:100%;align-items:stretch}
   .sns-name{justify-content:center}
   .qq-row .hint{margin-left:0}
-  .hero-mark{opacity:.6}
 }
 @media (max-width:720px){
   .cards{grid-template-columns:1fr}
@@ -400,13 +390,13 @@ button{font-family:inherit}
   .brand{font-size:18px;gap:9px}
   .brand svg{width:34px;height:34px}
   .date-chip{font-size:12px;padding:7px 11px;gap:6px}
-  .hero{padding-top:calc(var(--nav-h) + 40px)}
-  .hero-inner{align-items:stretch}
-  .eyebrow{align-self:flex-start}
+  .hero{padding-top:calc(var(--nav-h) + 24px)}
+  .hero-inner{align-items:center}
+  .eyebrow{align-self:center}
   .cta-row .btn{flex:1 1 auto;justify-content:center}
   .to-top{width:50px;height:50px}
   .foot-bottom{justify-content:center;text-align:center}
-  .qr-wrap{width:min(78vw,300px)}
+  .qr-wrap{width:min(72vw,262px)}
   .card-num{font-size:54px}
   .wechat-card{padding:22px 16px}
   .qq-row{padding:14px 16px}
@@ -475,7 +465,6 @@ button{font-family:inherit}
 <main id="top">
   <!-- ================= 主视觉 ================= -->
   <section class="hero">
-    <span class="hero-mark" aria-hidden="true">颜</span>
     <div class="wrap">
       <div class="hero-inner">
         <span class="eyebrow reveal"><i class="dot"></i>2027考研、2028考研资源 · 一站式集合</span>
@@ -501,13 +490,6 @@ button{font-family:inherit}
 
   <!-- ================= 资源入口 ================= -->
   <section class="wrap" id="entries">
-    <div class="section-head reveal">
-      <div>
-        <h2 class="section-title">资源入口</h2>
-        <p class="section-sub">三个入口，覆盖考研全程</p>
-      </div>
-    </div>
-
     <div class="cards">
       <!-- 01 课程目录 -->
       <a class="card card--catalog reveal" href="https://docs.qq.com/doc/DUGZLbGFEVEpFdVNy" target="_blank" rel="noopener noreferrer">
