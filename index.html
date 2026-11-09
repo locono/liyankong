@@ -74,7 +74,7 @@ button{font-family:inherit}
   border-bottom:2px dashed rgba(32,38,58,.16);
 }
 .nav.scrolled{box-shadow:0 8px 24px -18px rgba(32,38,58,.7)}
-.brand{display:inline-flex;align-items:center;gap:10px;justify-self:start;font-size:20px;font-weight:900;letter-spacing:.5px}
+.brand{display:inline-flex;align-items:center;gap:10px;justify-self:start;font-size:21px;font-weight:900;letter-spacing:.5px}
 .brand-mark{
   width:40px;height:40px;flex:none;display:grid;place-items:center;
   background:var(--hi);border:2.5px solid var(--ink);border-radius:11px;
@@ -86,13 +86,13 @@ button{font-family:inherit}
 .brand span{border-bottom:3px solid var(--hi);line-height:1.1}
 .nav-tabs{display:flex;align-items:center;gap:6px;list-style:none;margin:0;padding:0}
 .nav-tabs a{
-  display:block;padding:7px 15px;border-radius:8px;font-size:13.5px;font-weight:800;color:var(--ink-soft);
+  display:block;padding:7px 15px;border-radius:8px;font-size:14.5px;font-weight:800;color:var(--ink-soft);
   border:2px solid transparent;transition:background .22s,color .22s,transform .22s,border-color .22s;
 }
 .nav-tabs a:hover{background:var(--hi);border-color:var(--ink);color:var(--ink);transform:translateY(-2px) rotate(-1.5deg)}
 .nav-right{justify-self:end;display:flex;align-items:center;gap:12px}
 .date-stamp{
-  font-family:var(--mono);font-size:12px;font-weight:800;letter-spacing:.4px;
+  font-family:var(--mono);font-size:13px;font-weight:800;letter-spacing:.4px;
   color:var(--coral);border:2px solid var(--coral);border-radius:6px;
   padding:5px 9px;transform:rotate(-3deg);white-space:nowrap;
   background:rgba(255,255,255,.5);
@@ -110,13 +110,13 @@ button{font-family:inherit}
 .mobile-panel.open{display:block}
 .mobile-panel a{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 14px;font-weight:800;border-radius:8px}
 .mobile-panel a:active{background:var(--hi)}
-.mobile-panel a span{font-size:12px;color:var(--muted);font-weight:700}
+.mobile-panel a span{font-size:13px;color:var(--muted);font-weight:700}
 
 /* ============ 主视觉 ============ */
 .hero{position:relative;padding:clamp(38px,6vh,66px) 0 clamp(26px,4vh,44px)}
 .hero-inner{position:relative;z-index:1;text-align:center;display:flex;flex-direction:column;align-items:center;gap:clamp(12px,1.8vw,19px)}
 .eyebrow{
-  display:inline-block;font-size:12.5px;font-weight:900;letter-spacing:1.4px;
+  display:inline-block;font-size:13.5px;font-weight:900;letter-spacing:1.4px;
   padding:6px 16px;background:var(--hi);border:2px solid var(--ink);border-radius:100px;
   transform:rotate(-1.6deg);box-shadow:3px 3px 0 var(--ink);
 }
@@ -134,7 +134,7 @@ button{font-family:inherit}
 @keyframes swipe{from{transform:rotate(-3deg) skewX(-7deg) scaleX(0)}to{transform:rotate(-3deg) skewX(-7deg) scaleX(1)}}
 .stamp{
   position:absolute;top:.1em;right:-1.05em;
-  font-family:var(--font);font-size:clamp(10px,1.15vw,14px);font-weight:900;letter-spacing:1px;
+  font-family:var(--font);font-size:clamp(11px,1.25vw,15px);font-weight:900;letter-spacing:1px;
   color:var(--coral);border:2px solid var(--coral);border-radius:7px;
   padding:4px 8px;line-height:1.2;transform:rotate(11deg);white-space:nowrap;
   background:rgba(255,255,255,.72);
@@ -148,7 +148,7 @@ button{font-family:inherit}
   background:var(--coral);border-radius:60% 40% 55% 45%/70% 60% 40% 30%;
   transform:rotate(-1deg);opacity:.85;
 }
-.hero .lead{margin:2px 0 0;max-width:660px;font-size:clamp(14px,1.6vw,17.5px);color:var(--ink-soft);font-weight:500}
+.hero .lead{margin:2px 0 0;max-width:660px;font-size:clamp(15.5px,1.75vw,19.5px);color:var(--ink-soft);font-weight:500}
 .hero .lead b{
   font-weight:900;color:var(--ink);white-space:nowrap;
   background:linear-gradient(transparent 66%,rgba(255,228,92,.9) 66%);
@@ -157,7 +157,7 @@ button{font-family:inherit}
 .btn{
   display:inline-flex;align-items:center;gap:9px;
   padding:12px 22px;border:2px solid var(--ink);border-radius:11px;
-  font-size:14px;font-weight:900;cursor:pointer;
+  font-size:15px;font-weight:900;cursor:pointer;
   box-shadow:var(--shadow);transition:transform .22s,box-shadow .22s,background .22s;
 }
 .btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
@@ -169,10 +169,10 @@ button{font-family:inherit}
 .btn-b:hover{background:#fff}
 .hero-note{
   position:absolute;z-index:1;width:132px;padding:14px 12px;
-  font-size:12.5px;font-weight:800;line-height:1.5;text-align:center;
+  font-size:13.5px;font-weight:800;line-height:1.5;text-align:center;
   border:2px solid var(--ink);border-radius:4px;box-shadow:4px 4px 0 var(--ink);
 }
-.hero-note b{display:block;font-family:var(--mono);font-size:21px;line-height:1.2;margin-bottom:2px}
+.hero-note b{display:block;font-family:var(--mono);font-size:22px;line-height:1.2;margin-bottom:2px}
 .hero-note-l{left:clamp(20px,5vw,90px);top:clamp(90px,15vh,150px);background:#DFF5EE;transform:rotate(-9deg)}
 .hero-note-r{right:clamp(20px,5vw,90px);top:clamp(120px,19vh,190px);background:#FFE9E6;transform:rotate(8deg)}
 .hero-note::before{
@@ -215,12 +215,12 @@ button{font-family:inherit}
 .c2 .card-ico{background:#FFE1DE}
 .c3 .card-ico{background:#DDF5EE}
 .card-ico svg{width:24px;height:24px;fill:none;stroke:var(--ink);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.card h3{margin:0;font-size:clamp(19px,2.1vw,25px);font-weight:900;letter-spacing:-.02em}
-.card p{margin:4px 0 0;font-size:13.8px;color:var(--ink-soft);font-weight:500;max-width:620px}
+.card h3{margin:0;font-size:clamp(20px,2.2vw,26px);font-weight:900;letter-spacing:-.02em}
+.card p{margin:4px 0 0;font-size:15px;color:var(--ink-soft);font-weight:500;max-width:620px}
 .checklist{display:flex;flex-wrap:wrap;gap:8px;margin-top:2px}
 .chip{
   display:inline-flex;align-items:center;gap:6px;
-  font-size:12.5px;font-weight:800;color:var(--ink-soft);
+  font-size:13.5px;font-weight:800;color:var(--ink-soft);
   padding:5px 11px 5px 8px;background:var(--paper);
   border:1.5px solid rgba(32,38,58,.22);border-radius:7px;
   transition:background .22s,transform .22s;
@@ -229,7 +229,7 @@ button{font-family:inherit}
 .card:hover .chip{background:#fff}
 .card-go{
   margin-top:auto;display:inline-flex;align-items:center;gap:7px;align-self:flex-start;
-  font-size:13.5px;font-weight:900;border-bottom:2px solid var(--ink);padding-bottom:2px;
+  font-size:14.5px;font-weight:900;border-bottom:2px solid var(--ink);padding-bottom:2px;
 }
 .card-go svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s}
 .card:hover .card-go svg{transform:translate(3px,-3px)}
@@ -238,13 +238,13 @@ button{font-family:inherit}
 .update-strip{
   display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;
   padding:13px 20px;border:2px dashed rgba(32,38,58,.3);border-radius:12px;
-  background:rgba(255,255,255,.45);font-size:13px;font-weight:700;color:var(--ink-soft);
+  background:rgba(255,255,255,.45);font-size:14px;font-weight:700;color:var(--ink-soft);
   text-align:center;
 }
 .update-strip b{color:var(--ink);font-weight:900}
-.us-mark{font-size:17px;color:var(--violet)}
+.us-mark{font-size:18px;color:var(--violet)}
 .us-date{
-  font-family:var(--mono);font-size:12px;font-weight:900;letter-spacing:.5px;
+  font-family:var(--mono);font-size:13px;font-weight:900;letter-spacing:.5px;
   background:var(--hi);border:1.5px solid var(--ink);border-radius:5px;padding:3px 8px;
   transform:rotate(-3deg);color:var(--ink);
 }
@@ -274,7 +274,7 @@ button{font-family:inherit}
 .qr-wrap img{width:100%;height:auto;display:block}
 .pola-cap{
   position:absolute;left:0;right:0;bottom:13px;text-align:center;
-  font-family:var(--hand);font-size:15px;font-weight:700;color:var(--ink-soft);
+  font-family:var(--hand);font-size:16px;font-weight:700;color:var(--ink-soft);
 }
 .polaroid::before{
   content:"";position:absolute;top:-13px;left:50%;width:74px;height:24px;
@@ -284,12 +284,12 @@ button{font-family:inherit}
 .foot-info{display:flex;flex-direction:column;gap:13px;min-width:0}
 .note-name{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .lbl{
-  font-family:var(--mono);font-size:11px;font-weight:900;letter-spacing:1px;
+  font-family:var(--mono);font-size:12px;font-weight:900;letter-spacing:1px;
   background:var(--ink);color:#fff;padding:5px 10px;border-radius:5px;transform:rotate(-2deg);
 }
-.note-name strong{font-size:clamp(26px,3.4vw,40px);font-weight:900;letter-spacing:.5px;line-height:1.1}
+.note-name strong{font-size:clamp(27px,3.5vw,42px);font-weight:900;letter-spacing:.5px;line-height:1.1}
 .wechat-search{display:flex;flex-direction:column;gap:8px}
-.sns-row{display:flex;align-items:center;gap:9px;font-size:14px;font-weight:900;color:var(--ink)}
+.sns-row{display:flex;align-items:center;gap:9px;font-size:15px;font-weight:900;color:var(--ink)}
 .sns-row svg{width:24px;height:24px;flex:none}
 .search-box{
   display:flex;align-items:center;gap:10px;
@@ -297,7 +297,7 @@ button{font-family:inherit}
   box-shadow:3px 3px 0 var(--ink);
 }
 .search-box svg{width:19px;height:19px;flex:none;fill:none;stroke:var(--muted);stroke-width:2.3;stroke-linecap:round}
-.search-box span{font-size:clamp(15px,1.7vw,19px);font-weight:800;letter-spacing:1px}
+.search-box span{font-size:clamp(16px,1.8vw,20px);font-weight:800;letter-spacing:1px}
 .qq-row{
   display:flex;align-items:center;gap:12px;flex-wrap:wrap;width:100%;
   text-align:left;cursor:pointer;padding:12px 16px;
@@ -306,13 +306,13 @@ button{font-family:inherit}
   transition:transform .22s,box-shadow .22s;
 }
 .qq-row:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
-.qq-row .v{font-size:14px;font-weight:900;white-space:nowrap}
+.qq-row .v{font-size:15px;font-weight:900;white-space:nowrap}
 .qq-row .v em{
-  font-style:normal;font-family:var(--mono);font-size:clamp(19px,2.3vw,28px);
+  font-style:normal;font-family:var(--mono);font-size:clamp(20px,2.4vw,29px);
   font-weight:900;letter-spacing:.5px;margin-left:7px;
 }
 .qq-row .copy{
-  margin-left:auto;font-size:12.5px;font-weight:900;color:#fff;
+  margin-left:auto;font-size:13.5px;font-weight:900;color:#fff;
   background:var(--coral);border:2px solid var(--ink);border-radius:100px;
   padding:7px 14px;transform:rotate(-3deg);white-space:nowrap;
 }
@@ -321,19 +321,19 @@ button{font-family:inherit}
   margin-top:clamp(26px,4vw,44px);
 }
 .fd-lbl{
-  font-family:var(--mono);font-size:11px;font-weight:900;letter-spacing:1px;
+  font-family:var(--mono);font-size:12px;font-weight:900;letter-spacing:1px;
   border:1.5px solid var(--ink);border-radius:100px;padding:4px 11px;
   background:rgba(255,255,255,.6);
 }
 .fd-val{
-  font-family:var(--hand);font-size:clamp(22px,3.1vw,38px);font-weight:700;line-height:1.2;
+  font-family:var(--hand);font-size:clamp(23px,3.2vw,39px);font-weight:700;line-height:1.2;
   border-bottom:5px solid var(--hi);padding-bottom:2px;
 }
 .foot-bottom{
   display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
   margin-top:clamp(22px,3vw,34px);padding-top:16px;
   border-top:2px dashed rgba(32,38,58,.22);
-  font-size:12.5px;font-weight:700;color:var(--ink-soft);
+  font-size:13.5px;font-weight:700;color:var(--ink-soft);
 }
 .foot-links{display:flex;gap:16px;flex-wrap:wrap}
 .foot-links a{border-bottom:1.5px solid transparent}
@@ -357,7 +357,7 @@ button{font-family:inherit}
 .toast{
   position:fixed;left:50%;bottom:36px;z-index:200;transform:translate(-50%,20px);
   display:flex;align-items:center;gap:9px;padding:11px 18px;
-  background:var(--ink);color:#fff;font-size:13.5px;font-weight:800;border-radius:10px;
+  background:var(--ink);color:#fff;font-size:14.5px;font-weight:800;border-radius:10px;
   box-shadow:4px 4px 0 var(--coral);opacity:0;visibility:hidden;
   transition:opacity .28s,transform .28s,visibility .28s;
 }
@@ -384,7 +384,7 @@ button{font-family:inherit}
   :root{--nav-h:64px}
   .cards{grid-template-columns:1fr}
   .card--catalog,.card:nth-of-type(2),.card:nth-of-type(3){grid-column:auto;transform:none}
-  .date-stamp{font-size:11px;padding:4px 7px}
+  .date-stamp{font-size:12px;padding:4px 7px}
   .polaroid{width:min(72vw,250px)}
   .foot-bottom{justify-content:center;text-align:center}
   .squiggle{width:70vw}
@@ -392,7 +392,7 @@ button{font-family:inherit}
 @media (max-width:480px){
   .hero h1{font-size:clamp(58px,17vw,84px)}
   .hero-domain{font-size:clamp(21px,6.4vw,30px)}
-  .btn{padding:11px 17px;font-size:13px}
+  .btn{padding:11px 17px;font-size:14px}
   .qq-row .copy{margin-left:0}
 }
 @media (prefers-reduced-motion:reduce){
